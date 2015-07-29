@@ -3,11 +3,13 @@
 one:
   title: MyString
   body: MyText
-  summary: MyText
-  author: MyString
+  summary: MyString
+  author_id: 1
+  published: false
 
 two:
   title: MyString
   body: MyText
-  summary: MyText
-  author: MyString
+  summary: MyString
+  author_id: 1
+  published: false
