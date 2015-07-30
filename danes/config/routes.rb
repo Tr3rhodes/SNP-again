@@ -15,7 +15,9 @@ Rails.application.routes.draw do
 
   get 'about' => 'posts#about'
 
-  get 'index' => 'posts#index'
+  # get 'index' => 'posts#index'
+
+  get 'authors/new' => 'authors#new'
 
 
 

@@ -11,9 +11,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = Post.find(params[:id])
-    @title = @post.title
-    @subheading = @post.summary
+
   end
 
   # GET /posts/new
@@ -68,7 +66,7 @@ class PostsController < ApplicationController
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
       format.json { head :no_content }
     end
-  end
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -83,4 +81,4 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :body, :summary, :author_id, :published)
     end
-end
+  end
