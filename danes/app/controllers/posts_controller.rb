@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   end
 
   def about
-    @title = "About"
+    @title = "ABOUT"
     @subheading = "The Love of Danes"
   end
 
